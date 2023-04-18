@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup_nonl.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 11:01:14 by abeaudet          #+#    #+#             */
-/*   Updated: 2022/12/29 16:34:02 by abeaudet         ###   ########.fr       */
+/*   Created: 2023/03/07 13:28:02 by abeaudet          #+#    #+#             */
+/*   Updated: 2023/03/14 18:27:58 by abeaudet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strdup_nonl(const char *s1)
 {
-	int	i;
+	int		i;
+	char	*dst;
 
-	i = ft_strlen((char *)s);
-	while (0 != i && s[i] != (char)c)
-	i--;
-	if (s[i] == (char)c)
-		return ((char *)&s[i]);
-	return (NULL);
+	i = 0;
+	dst = malloc(sizeof(char) * ft_strlen(s1) - 1);
+	if (dst == NULL)
+		return (NULL);
+	while (i < (int)ft_strlen(s1) - 1)
+	{
+		dst[i++] = *s1++;
+	}
+	return (dst);
 }

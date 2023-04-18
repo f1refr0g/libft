@@ -6,7 +6,7 @@
 #    By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/21 11:17:32 by abeaudet          #+#    #+#              #
-#    Updated: 2022/11/01 16:24:00 by abeaudet         ###   ########.fr        #
+#    Updated: 2023/03/14 17:16:04 by abeaudet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,8 +48,7 @@ SRCS =  ft_atoi.c \
 		ft_putendl_fd.c\
 		ft_putnbr_fd.c\
 		ft_itoa.c\
-
-BONUS =	ft_lstnew.c\
+		ft_lstnew.c\
 		ft_lstadd_front.c\
 		ft_lstsize.c\
 		ft_lstlast.c\
@@ -58,11 +57,14 @@ BONUS =	ft_lstnew.c\
 		ft_lstclear.c\
 		ft_lstiter.c\
 		ft_lstmap.c\
+		ft_freeptr.c\
+		ft_free_array.c\
+		ft_error.c\
+		ft_strdup_nonl.c\
+		ft_strjoin_nonl.c\
 		
 		
 OBJS = $(SRCS:.c=.o)
-
-BONUS_OBJS = $(BONUS:.c=.o)
 
 HEADER = libft.h
 
@@ -75,11 +77,9 @@ $(NAME):
 	
 all: $(NAME)
 
-bonus:	$(BONUS_OBJS)
-			ar rc $(NAME) $(BONUS_OBJS)
 
 clean:
-	/bin/rm -f $(OBJS) $(BONUS_OBJS)
+	/bin/rm -f $(OBJS) 
 	
 fclean: clean
 	/bin/rm -f $(NAME)

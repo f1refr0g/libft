@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 11:01:14 by abeaudet          #+#    #+#             */
-/*   Updated: 2022/12/29 16:34:02 by abeaudet         ###   ########.fr       */
+/*   Created: 2023/02/18 12:47:21 by abeaudet          #+#    #+#             */
+/*   Updated: 2023/03/14 17:15:32 by abeaudet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_freeptr(void *ptr)
 {
-	int	i;
-
-	i = ft_strlen((char *)s);
-	while (0 != i && s[i] != (char)c)
-	i--;
-	if (s[i] == (char)c)
-		return ((char *)&s[i]);
+	if (ptr)
+		free(ptr);
 	return (NULL);
 }

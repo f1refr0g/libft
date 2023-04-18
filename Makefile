@@ -6,7 +6,7 @@
 #    By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/21 11:17:32 by abeaudet          #+#    #+#              #
-#    Updated: 2023/03/14 17:16:04 by abeaudet         ###   ########.fr        #
+#    Updated: 2023/04/18 16:08:06 by abeaudet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,14 @@ SRCS =  ft_atoi.c \
 		ft_error.c\
 		ft_strdup_nonl.c\
 		ft_strjoin_nonl.c\
+		ft_percent.c\
+		ft_printf.c\
+		ft_printnbr.c\
+		ft_ptr.c\
+		ft_typestring.c\
+		ft_unsigned.c\
+		ft_hexaprint.c\
+		ft_putchar.c\
 		
 		
 OBJS = $(SRCS:.c=.o)

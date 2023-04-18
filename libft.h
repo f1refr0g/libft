@@ -6,7 +6,7 @@
 /*   By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:05:05 by abeaudet          #+#    #+#             */
-/*   Updated: 2023/03/14 19:18:45 by abeaudet         ###   ########.fr       */
+/*   Updated: 2023/04/18 16:08:48 by abeaudet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <xlocale.h>
+# include "ft_printf.h"
 
 typedef struct s_list
 {
@@ -78,5 +79,7 @@ void	**ft_free_array(char **array);
 char	*ft_strjoin_nonl(char *s1, char const *s2);
 char	*ft_strdup_nonl(const char *s1);
 void	ft_error(char *err);
+
+//Print f function
 
 #endif

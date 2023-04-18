@@ -6,7 +6,7 @@
 /*   By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:05:05 by abeaudet          #+#    #+#             */
-/*   Updated: 2023/04/18 16:08:48 by abeaudet         ###   ########.fr       */
+/*   Updated: 2023/04/18 16:12:55 by abeaudet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdlib.h>
 # include <xlocale.h>
 # include "ft_printf.h"
+# include "get_next_line.h"
 
 typedef struct s_list
 {

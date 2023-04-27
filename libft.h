@@ -6,7 +6,7 @@
 /*   By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:05:05 by abeaudet          #+#    #+#             */
-/*   Updated: 2023/04/18 16:15:12 by abeaudet         ###   ########.fr       */
+/*   Updated: 2023/04/27 18:47:09 by abeaudet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,7 @@ void	**ft_free_array(char **array);
 char	*ft_strjoin_nonl(char *s1, char const *s2);
 char	*ft_strdup_nonl(const char *s1);
 void	ft_error(char *err);
+int		ft_digit(char c);
+int		ft_isint(int nb);
 
 #endif

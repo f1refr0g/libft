@@ -6,7 +6,7 @@
 #    By: abeaudet <abeaudetfr0g42@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/21 11:17:32 by abeaudet          #+#    #+#              #
-#    Updated: 2023/04/18 16:12:38 by abeaudet         ###   ########.fr        #
+#    Updated: 2023/04/27 18:45:32 by abeaudet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,6 +72,8 @@ SRCS =  ft_atoi.c \
 		ft_putchar.c\
 		get_next_line.c\
 		get_next_line_utils.c\
+		ft_digit.c\
+		ft_isint.c\
 		
 		
 OBJS = $(SRCS:.c=.o)
